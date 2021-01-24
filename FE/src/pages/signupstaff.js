@@ -97,7 +97,7 @@ export default function StaffReg(props) {
     { id: "City", type: "string" },
     { id: "Postal_Code", type: "number" },
     { id: "Contact_Primary", type: "number" },
-    { id: "Post_ID", type: "number" },
+    { id: "Post_ID (0-5)", type: "number" },
   ]
 
   const field = rows.map((row) => {

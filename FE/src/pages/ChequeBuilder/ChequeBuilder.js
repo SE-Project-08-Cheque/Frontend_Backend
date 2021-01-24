@@ -45,10 +45,10 @@ function ChequeBuilder(props) {
     API_Service.send_cheque(datatosend,(res)=>{
       console.log(res.success);
       if(res.data.success===true){
-        console.log("Aler Success");
+        props.history.push('/chequelist')
       }
       else{
-        console.log("Alert Failed")
+        props.history.push('/chequelist')
       }
     });
     console.log(data);
